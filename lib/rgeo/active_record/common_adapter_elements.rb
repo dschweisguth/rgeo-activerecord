@@ -19,7 +19,7 @@ module RGeo
 
     # Index definition struct with a spatial flag field.
 
-    class SpatialIndexDefinition < Struct.new(:table, :name, :unique, :columns, :lengths, :orders, :where, :spatial)
+    class SpatialIndexDefinition < Struct.new(:table, :name, :unique, :columns, :lengths, :orders, :where, :spatial, :using, :type)
     end
 
     # Returns a feature type module given a string type.
